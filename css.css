@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    background-image: url(images/portfolio.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    background-color: #424d56;
+    opacity: 0.5;
+    position: relative;
+    
+}
+
+.header{
+    direction: rtl;
+    margin: 0px;
+
+}
+.header a{
+    margin: 0;
+    padding: 0;
+}
+
+
+.images {
+    width: 7%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.form-box{
+    background-color: transparent;
+    border: 2px rgba(105, 105, 105, 0.35);
+    border-radius: 20px;
+    background-color: rgba(105, 105, 105, 0.35);
+    backdrop-filter: blur(15px);
+    position: relative;
+    width: 950px;
+    height: auto;
+    min-height: 350px;
+    display: flex;
+    text-align: justify;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+
+.python{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.form-box-python{
+    background-color: transparent;
+    border: 2px rgba(105, 105, 105, 0.35);
+    border-radius: 20px;
+    background-color: rgba(105, 105, 105, 0.35);
+    backdrop-filter: blur(15px);
+    position: relative;
+    width: 950px;
+    height: auto;
+    min-height: 350px;
+    display: flex;
+    text-align: justify;
+    margin-left: 20%;
+    margin-top: 2%;
+    
+}
+
+.profile-img{
+    border-radius: 50%;
+    width: 40%;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    margin: 15;
+
+}
+
+.python-img{
+    border-radius: 50%;
+    width: 40%;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    margin: 15;
+    mix-blend-mode: color-burn;
+    
+}
+
+main {
+    text-align: center;
+}
+
+
+
+footer{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color:#6f9196;
+}
+
+footer a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color:antiquewhite;
+}
+
+.footer-b{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    color: #EAF6F6;
+  }
+
+a {
+    color: #0442c1;
+    font-family: sans-serif;
+    margin: 10px 20px;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+
+#gif{
+    width: 30%;
+}
+
+#texto-introducao{
+    margin-top: 50px;
+    padding: 15px 20px 15px 10px;
+    font-size: x-large;
+    font-family: 'Josefin Sans', sans-serif;
+}
