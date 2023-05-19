@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: url(images/portfolio.avif);
+    background: linear-gradient(to bottom, #a3cef1, #274c77);
     background-position: center;
     background-size: cover;
 }
@@ -12,6 +12,8 @@ header{
     position: relative;
     width: 100%;
     min-height: 110px;
+    position: fixed;
+    z-index: 2;
 
     
 }
@@ -46,7 +48,7 @@ header{
 .email-contact::after{
     content: "Contact Me";
     position: absolute;
-    bottom: 350%;
+    top: 100%;
     right: 0%;
     color: white;
     background-color: black;
@@ -67,8 +69,8 @@ header{
     background-color: transparent;
     border: 2px rgba(105, 105, 105, 0.35);
     border-radius: 20px;
-    background-color: rgba(105, 105, 105, 0.35);
-    backdrop-filter: blur(15px);
+    background-color: #9a8c98;
+    backdrop-filter: blur(50px);
     position: relative;
     width: 950px;
     height: auto;
@@ -83,15 +85,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-
 }
 
 .form-box-python{
     background-color: transparent;
     border: 2px rgba(105, 105, 105, 0.35);
     border-radius: 20px;
-    background-color: rgba(105, 105, 105, 0.35);
+    background-color: #4a4e69;
     backdrop-filter: blur(15px);
     position: relative;
     width: 950px;
@@ -108,31 +108,62 @@ header{
     border-radius: 50%;
     width: 40%;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
-    margin: 15;
-    height: auto;
-
+    margin: 15px;
+    height: 60%;
+    margin-top: 50px;
+    transition: transform .2s;
 }
+
+.profile-img:hover{
+    transform: scale(1.2);
+}
+
+.python-img:hover{
+    transform: scale(1.2);
+}
+
 
 .python-img{
     border-radius: 30%;
     width: 40%;
-    box-shadow: 0px 0px 20px;
     margin: 15;
-    mix-blend-mode: color-burn;
     height: auto;
+    transition: transform .2s;
 }
+.java{
+    position: relative;
+    top: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    margin: 15;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 20px;
+    transition: transform .2;
+}
+
+.java:hover{
+    transform: scale(1.2);
+}
+
 
 main {
     text-align: center;
+    padding-top: 180px;
 }
 
-
+a:visited{
+    color: #e7ecef;
+}
+a{
+    color: #274c77;
+}
 
 footer{
     position: relative;
     text-align: center;
     padding: 20px;
-    background-color:#6f9196;
+    background-color:#6096ba;
 }
 
 footer a {
@@ -177,7 +208,7 @@ a:hover {
 .whatsapp::after{
     content: "Whatsapp Me";
     position: absolute;
-    bottom: 350%;
+    top: 100%;
     right: 0%;
     color: white;
     background-color: black;
@@ -187,6 +218,7 @@ a:hover {
     opacity: 0;
     pointer-events: none; 
     transition: opacity 0.3s ease;
+    
 }
 
 .whatsapp:hover::after{
@@ -204,13 +236,23 @@ a:hover {
 
 #gif{
     width: 40%;
+    height: auto;
+    object-fit: cover;
+    transition: transform .2s;
 }
 
-#texto-introducao{
+#gif:hover{
+    transform: scale(1.2);
+}
+
+.texto-introducao{
     margin-top: 50px;
     padding: 15px 20px 15px 10px;
     font-size: x-large;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
+    display: inline;
+    /*color: linear-gradient(to bottom, #274c77, #a3cef1);*/
+    /*background: linear-gradient(to bottom, #fca311, #ffffff);*/
 }
 
 #up-image{
